@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Renuki</title>
+</head>
+<body>
+Welcome to Renuki.
+<ul class="parts">
+  <% for(var i=0; i<parts.length; i++) {%>
+    <li class="part">
+      <span><%= parts[i].name %></span>
+      <span><%= parts[i].part %></span>
+    </li>
+  <% } %>
+  </ul>
+</br>
+  Parts
+   <form action="/parts" method="POST">
+  <input type="text" placeholder="name" name="name">
+  <input type="text" placeholder="part" name="part">
+  <button type="submit">Submit</button>
+  </br>
+  Projects
+   <form action="/projects" method="POST">
+  <input type="text" placeholder="name" name="name">
+  <input type="text" placeholder="project" name="project">
+  <button type="submit">Submit</button>
+  </br>
+  Procurement
+   <form action="/procurement" method="POST">
+  <input type="text" placeholder="name" name="name">
+  <input type="text" placeholder="procurement" name="procurement">
+  <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>

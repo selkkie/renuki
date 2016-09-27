@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Renuki</title>
+</head>
+<body>
+Welcome to Renuki.
+
+
+<!--   Username -->
+<!--    <form action="/login" method="POST"> -->
+<!--   <input type="text" placeholder="username" name="username"> -->
+<!--   <input type="text" placeholder="password" name="password"> -->
+<!--   <button type="submit">Login</button> -->
+<!-- </form> -->
+</br>
+  Parts
+   <form action="/parts" method="POST">
+
+  <input type="text" placeholder="part" name="part">
+  <button type="submit">Submit</button>
+  </br>
+  Projects
+   <form action="/projects" method="POST">
+  
+  <input type="text" placeholder="project" name="project">
+  <button type="submit">Submit</button>
+  </br>
+  Procurement
+   <form action="/procurement" method="POST">
+  <input type="text" placeholder="procurement" name="procurement">
+  <button type="submit">Submit</button>
+</form>
+
+    </br>
+
+<ul class="parts">
+  <% for(var i=0; i<parts.length; i++) {%>
+    <li class="part">
+     
+      <span><%= parts[i].part %></span>
+    </li>
+  <% } %>
+  </ul>
+  </br>
+  <ul class="projects">
+  <% for(var j=0; j<projects.length; j++) {%>
+    <li class="project">
+   
+      <span><%= projects[j].project %></span>
+    </li>
+  <% } %>
+  </ul>
+    </br>
+  <ul class="procurement">
+  <% for(var k=0; k<procurement.length; k++) {%>
+    <li class="procurement">
+ 
+      <span><%= procurement[k].procurement %></span>
+    </li>
+  <% } %>
+  </ul>
+
+</body>
+</html>
